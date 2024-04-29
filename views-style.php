@@ -36,6 +36,7 @@
 		text-decoration: none;
 	}
 
+	.postsVisitorsCount-page-container .pagination label,
 	.postsVisitorsCount-page-container .pagination a,
 	.postsVisitorsCount-page-container .pagination span {
 		padding: 1em;
@@ -57,7 +58,7 @@
 		justify-content: center;
 	}
 
-	.postsVisitorsCount-page-container .pagination li.active a {
+	.postsVisitorsCount-page-container .pagination li.active label {
 		background: lightblue;
 	}
 
