@@ -116,13 +116,15 @@ if (isset($_GET['from']) && isset($_GET['to'])) {
 			$al_query_args['date_query'] = [
 				[
 					'after'   => $_GET['from'],
-					'before' => $_GET['to']
+					'before' => $_GET['to'],
+					'inclusive' => true, 
 				]
 			];
 			$views_query_args['date_query'] = [
 				[
 					'after'   => $_GET['from'],
-					'before' => $_GET['to']
+					'before' => $_GET['to'],
+					'inclusive' => true, 
 				]
 			];
 			$get_query_date = 'period'; 
@@ -132,13 +134,15 @@ if (isset($_GET['from']) && isset($_GET['to'])) {
 			$al_query_args['date_query'] = [
 				[
 					'after'   => $start_date,
-					'before' => $end_date
+					'before' => $end_date,
+					'inclusive' => true, 
 				]
 			];
 			$views_query_args['date_query'] = [
 				[
 					'after'   => $start_date,
-					'before' => $end_date
+					'before' => $end_date,
+					'inclusive' => true, 
 				]
 			];
 			$get_query_date = 'period'; 
