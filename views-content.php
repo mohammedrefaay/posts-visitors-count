@@ -129,19 +129,17 @@ if (isset($_GET['from']) && isset($_GET['to'])) {
 			];
 			$get_query_date = 'period'; 
 		} elseif ($from === $to) {
-			$start_date = date('y-m-d', strtotime('-1 day', $from));
-			$end_date = date('y-m-d', strtotime('+1 day', $from));
 			$al_query_args['date_query'] = [
 				[
-					'after'   => $start_date,
-					'before' => $end_date,
+					'after'   => $_GET['from'],
+					'before' => $_GET['to'],
 					'inclusive' => true, 
 				]
 			];
 			$views_query_args['date_query'] = [
 				[
-					'after'   => $start_date,
-					'before' => $end_date,
+					'after'   => $_GET['from'],
+					'before' => $_GET['to'],
 					'inclusive' => true, 
 				]
 			];
